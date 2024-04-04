@@ -15,7 +15,7 @@ export default defineConfig({
     syntaxHighlight: false,
     rehypePlugins: [[rehypePrettyCode, options]]
   },
-  site: "https://blog.coders51.com",
+  site: "https://abjunior92.github.io",
   integrations: [mdx(), sitemap(), tailwind(), react()],
   server: {
     host: true
