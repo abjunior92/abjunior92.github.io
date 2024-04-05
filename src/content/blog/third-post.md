@@ -2,7 +2,7 @@
 title: 'Baskin! 🏀 Into the world of the inclusive basketball...'
 description: "A new sport called Baskin, the word say basket and INclusive. Let's discover together what are the fundamentals"
 author: Andrea Junior Berselli
-pubDate: '04-05-2024'
+pubDate: '04-05-2024 16:00'
 ---
 
 ## Born in Italy

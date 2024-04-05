@@ -2,7 +2,7 @@
 title: 'ENDU: Frontend Project setup - how to start working on it'
 description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit suscipit illum excepturi repellat vel, itaque nostrum debitis inventore veritatis recusandae, animi distinctio at voluptates ratione consequuntur minus voluptate eum!"
 author: Andrea Junior Berselli
-pubDate: '03-25-2024'
+pubDate: '03-25-2024 10:00'
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
