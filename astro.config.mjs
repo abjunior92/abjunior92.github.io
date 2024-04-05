@@ -25,10 +25,13 @@ export default defineConfig({
     syntaxHighlight: false,
     rehypePlugins: [[rehypePrettyCode, options]]
   },
-  output: "static",
-  outDir: "./docs",
   site: BASE_URL,
   integrations: [mdx(), sitemap(), tailwind(), react()],
+  output: "static",
+  outDir: "./docs",
+  build: {
+    assets: "astro"
+  },
   server: {
     host: true
   }
