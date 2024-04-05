@@ -26,6 +26,7 @@ export default defineConfig({
     rehypePlugins: [[rehypePrettyCode, options]]
   },
   output: "static",
+  outDir: "./docs",
   site: BASE_URL,
   integrations: [mdx(), sitemap(), tailwind(), react()],
   server: {
