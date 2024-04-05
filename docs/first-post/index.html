@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en" class="min-h-screen bg-lightBg bg-gradientLight dark:bg-darkBg dark:bg-gradientDark" style="background-repeat:no-repeat;background-size:cover;background-attachment:fixed"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.ico"><meta name="generator" content="Astro v4.5.14"><!-- Canonical URL --><link rel="canonical" href="https://abjunior92.github.io/first-post/"><!-- Primary Meta Tags --><title>ENDU: Frontend Project setup - how to start working on it</title><meta name="title" content="ENDU: Frontend Project setup - how to start working on it"><meta name="description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit suscipit illum excepturi repellat vel, itaque nostrum debitis inventore veritatis recusandae, animi distinctio at voluptates ratione consequuntur minus voluptate eum!"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://abjunior92.github.io/first-post/"><meta property="og:title" content="ENDU: Frontend Project setup - how to start working on it"><meta property="og:description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit suscipit illum excepturi repellat vel, itaque nostrum debitis inventore veritatis recusandae, animi distinctio at voluptates ratione consequuntur minus voluptate eum!"><meta property="og:image" content="https://abjunior92.github.io/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://abjunior92.github.io/first-post/"><meta property="twitter:title" content="ENDU: Frontend Project setup - how to start working on it"><meta property="twitter:description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit suscipit illum excepturi repellat vel, itaque nostrum debitis inventore veritatis recusandae, animi distinctio at voluptates ratione consequuntur minus voluptate eum!"><meta property="twitter:image" content="https://abjunior92.github.io/blog-placeholder-1.jpg"><link rel="stylesheet" href="/astro/_slug_.C_cvFbTI.css">
+<link rel="stylesheet" href="/astro/index.D2pgcSkW.css"></head> <body> <main> <article> <div class="flex flex-col items-center justify-center"> <div class="prose prose-sky w-full pt-10 lg:prose-xl dark:prose-sky dark:prose-invert marker:text-black prose-a:underline-offset-2 prose-blockquote:border-l-coders51 prose-code:text-white dark:marker:text-white prose-blockquote:dark:border-l-white"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let a of e)if(a.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=l;window.dispatchEvent(new Event("astro:visible"));})();;(()=>{var v=Object.defineProperty;var A=(c,s,a)=>s in c?v(c,s,{enumerable:!0,configurable:!0,writable:!0,value:a}):c[s]=a;var d=(c,s,a)=>(A(c,typeof s!="symbol"?s+"":s,a),a);var u;{let c={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},s=t=>{let[e,n]=t;return e in c?c[e](n):void 0},a=t=>t.map(s),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,n])=>[e,s(n)]));customElements.get("astro-island")||customElements.define("astro-island",(u=class extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var f;if(!this.hydrator||!this.isConnected)return;let e=(f=this.parentElement)==null?void 0:f.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},l=this.querySelectorAll("template[data-astro-template]");for(let o of l){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let h;try{h=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",b=this.getAttribute("component-export");throw b&&(i+=` (export ${b})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let p;await this.hydrator(this)(this.Component,h,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url"),[l,{default:h}]=await Promise.all([import(this.getAttribute("component-url")),r?import(r):()=>()=>{}]),p=this.getAttribute("component-export")||"default";if(!p.includes("."))this.Component=l[p];else{this.Component=l;for(let y of p.split("."))this.Component=this.Component[y]}return this.hydrator=h,this.hydrate},e,this)}catch(r){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,r)}}attributeChangedCallback(){this.hydrate()}},d(u,"observedAttributes",["props"]),u))}})();</script><astro-island uid="48xku" prefix="r1" component-url="/astro/DarkModeToggle.D5eMa-5d.js" component-export="default" renderer-url="/astro/client.DbokQZWz.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;DarkModeToggle&quot;,&quot;value&quot;:true}" await-children=""><div class="absolute right-10"><button class="transition duration-300 hover:scale-110" aria-label="Switch to dark mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd"></path></svg></button></div><!--astro:end--></astro-island>  <div class="px-10 pb-10"> <a href="/" class="flex w-fit items-center self-start space-x-2 no-underline pb-10"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 transition duration-300 hover:scale-110"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd"></path></svg> <span>Blog</span> </a> <h1>ENDU: Frontend Project setup - how to start working on it</h1> <div class="flex flex-col"> <time class="text-sm text-coders51 dark:text-coders51dark" datetime="2024-03-24T23:00:00.000Z"> 25 mar 2024 </time>  <i class="text-sm text-coders51 dark:text-coders51dark">Andrea Junior Berselli</i> </div> <hr>  <p>This is a <a href="https://nextjs.org/">Next.js</a> project bootstrapped with <a href="https://github.com/vercel/next.js/tree/canary/packages/create-next-app"><code>create-next-app</code></a>.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>First, setup docker:</p>
+<p>launch</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="color:#F69D50">postgres</span><span style="color:#ADBAC7"> &#x26;&#x26; </span><span style="color:#F69D50">sleep</span><span style="color:#6CB6FF">  2</span><span style="color:#ADBAC7"> &#x26;&#x26; </span><span style="color:#F69D50">docker</span><span style="color:#96D0FF">  exec</span><span style="color:#96D0FF">  postgres</span><span style="color:#96D0FF">  /bin/bash</span><span style="color:#6CB6FF">  -c</span><span style="color:#96D0FF">  "createdb -U postgres ms_athlete_dev"</span><span style="color:#ADBAC7"> &#x26;&#x26; </span><span style="color:#F69D50">docker</span><span style="color:#96D0FF">  exec</span><span style="color:#96D0FF">  postgres</span><span style="color:#96D0FF">  /bin/bash</span><span style="color:#6CB6FF">  -c</span><span style="color:#96D0FF">  "createdb -U postgres ms_athlete_test"</span></span>
+<span data-line=""> </span></code></pre></figure>
+<p>and</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="color:#F69D50">docker</span><span style="color:#96D0FF">  rm</span><span style="color:#6CB6FF">  -f</span><span style="color:#96D0FF">  rabbitmq</span><span style="color:#ADBAC7"> &#x26;&#x26; </span><span style="color:#F69D50">docker</span><span style="color:#96D0FF">  run</span><span style="color:#6CB6FF">  -d</span><span style="color:#6CB6FF">  --hostname</span><span style="color:#96D0FF">  local-rabbitmq</span><span style="color:#6CB6FF">  --name</span><span style="color:#96D0FF">  rabbitmq</span><span style="color:#6CB6FF">  -p</span><span style="color:#96D0FF">  15672:15672</span><span style="color:#6CB6FF">  -p</span><span style="color:#96D0FF">  5672:5672</span><span style="color:#96D0FF">  rabbitmq:3-management</span></span>
+<span data-line=""> </span></code></pre></figure>
+<p>Second, run the backend server:</p>
+<p>download the project <code>ms-athlete</code> and launch on it</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="color:#F69D50">npm</span><span style="color:#96D0FF">  run</span><span style="color:#96D0FF">  start</span></span>
+<span data-line=""> </span></code></pre></figure>
+<p>This should run on localhost:3000</p>
+<p>in another terminal, run the seed</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="color:#F69D50">npm</span><span style="color:#96D0FF">  run</span><span style="color:#96D0FF">  seed</span></span>
+<span data-line=""> </span></code></pre></figure>
+<hr>
+<p>Third, run the development server for this project:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="color:#F69D50">npm</span><span style="color:#96D0FF">  run</span><span style="color:#96D0FF">  dev</span></span>
+<span data-line=""> </span></code></pre></figure>
+<p>Open <a href="http://localhost:3001">http://localhost:3001</a> with your browser to see the result.</p>
+<p>Set a valid <code>jwt</code> cookie on the Application in the browser to let the login works correctly.</p>
+<p>You can start editing the page by modifying <code>app/[lang]/page.tsx</code>. The page auto-updates as you edit the file.</p>
+<p>This project uses <a href="https://nextjs.org/docs/basic-features/font-optimization"><code>next/font/local</code></a> to automatically optimize and load SourceSansPro.</p>
+<h2 id="app-structure">App structure</h2>
+<p>The project follow the structure of the new <code>app router</code> by NextJs —> <a href="https://nextjs.org/docs/app/building-your-application/routing#the-app-router">NextJs App Router</a></p>
+<p>Under the <code>app</code> dir is specified a <code>[lang]</code> dir to handle the internationalization between italian and english languages.
+Inside the <code>locales</code> folder there are two sub-folders: one for <code>en</code> and one for <code>it</code> containing the keys to provide text all around the entire app.</p>
+<p>How to use inside a React component:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-dark-dimmed"><code data-language="jsx" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""><span style="color:#F47067">const</span><span style="color:#ADBAC7"> { </span><span style="color:#6CB6FF">t</span><span style="color:#ADBAC7"> } </span><span style="color:#F47067">=</span><span style="color:#DCBDFB">  useTranslation</span><span style="color:#ADBAC7">(</span><span style="color:#96D0FF">'common'</span><span style="color:#ADBAC7">)</span></span>
+<span data-line=""><span style="color:#F47067">...</span></span>
+<span data-line=""><span style="color:#ADBAC7">&#x3C;</span><span style="color:#8DDB8C">div</span><span style="color:#ADBAC7">></span><span style="color:#F47067">{</span><span style="color:#DCBDFB">t</span><span style="color:#ADBAC7">(</span><span style="color:#96D0FF">'somethingWentWrong'</span><span style="color:#ADBAC7">)</span><span style="color:#F47067">}</span><span style="color:#ADBAC7">&#x3C;/</span><span style="color:#8DDB8C">div</span><span style="color:#ADBAC7">></span></span></code></pre></figure>
+<p>“common.json” is the file where is defined the key: <code>somethingWentWrong</code>
+To enable a specific translation file for an url, see the <code>i18n.js</code> file configuration.</p>
+<p>Everything is under the <code>app</code> folder and contains a <code>page.tsx</code> file is a route.
+for example: <code>app/[lang]/profile/page.tsx</code> is the component that render on the <code>/it/profile</code> url.</p>
+<p>Every <code>page.tsx</code> file can have a <code>layout.tsx</code> file aside. This file is used to give a generic layout to the page, is a sort of wrapper.</p>
+<p>Each components or pages have a <code>xxx.test.tsx</code> file in order to have some unit test that guarantee the internal functionalities of the component.</p>
+<p>The app use <code>vitest</code> to run tests, it’s defined a <code>setup-test-env.tsx</code> where it can be found the standard setup/mocks for all the tests.</p>
+<p>to run unit tests:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""><span style="color:#F69D50">npm</span><span style="color:#96D0FF"> run</span><span style="color:#96D0FF"> test</span></span></code></pre></figure>
+<p>Instead, to run e2e tests with Cypress:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-dark-dimmed"><code data-language="bash" data-theme="github-dark-dimmed" style="display: grid;"><span data-line=""><span style="color:#F69D50">npm</span><span style="color:#96D0FF"> run</span><span style="color:#96D0FF"> test:e2e</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#768390">#or</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#F69D50">npm</span><span style="color:#96D0FF"> run</span><span style="color:#96D0FF"> test:e2e:ui</span></span></code></pre></figure>
+<h2 id="css">CSS</h2>
+<p><code>tailwindcss</code> is the standard</p>
+<p>Inside <code>globals.css</code> you can find some custom classes.
+Inside the <code>tailwind.config.ts</code> it’s possible to override or extends some tailwind rules and keywords.
+Useful to set the entire color design system.</p>
+<h2 id="graphql">GraphQL</h2>
+<p>There is a <code>graphql</code> folder with <code>mutation.graphql</code> and <code>schema.graphql</code>
+Inside the mutation file you can find all the mutations used in the app
+Inside the schema file you can find the shape of your available data, see the <code>codegen.ts</code> file to know how it’s built</p>
+<p>Inside some folders is possible to find some <code>query.graphql</code> file that it needs to define the relative query to use in that component/page</p>
+<p>Follow <a href="https://www.apollographql.com/blog/apollo-client/next-js/how-to-use-apollo-client-with-next-js-13/">this link</a> to see how it’s configured Apollo Server with Next Js</p>
+<h2 id="context">Context</h2>
+<p>There is a <code>context</code> folder that contains some context component in order to share state between the entire app
+(like the jwt token)</p>
+<h2 id="learn-more">Learn More</h2>
+<p>To learn more about Next.js, take a look at the following resources:</p>
+<ul>
+<li>
+<p><a href="https://nextjs.org/docs">Next.js Documentation</a> - learn about Next.js features and API.</p>
+</li>
+<li>
+<p><a href="https://nextjs.org/learn">Learn Next.js</a> - an interactive Next.js tutorial.</p>
+</li>
+</ul>
+<p>You can check out <a href="https://github.com/vercel/next.js/">the Next.js GitHub repository</a> - your feedback and contributions are welcome!</p>  </div> <footer> <div class="mx-auto flex items-center justify-center gap-x-8 py-10"> <a target="_blank" href="https://www.linkedin.com/company/coders51" class="transition duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-coders51 lg:h-6 lg:w-6 dark:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg></a> <a target="_blank" href="https://twitter.com/coders51" class="transition duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-coders51 lg:h-6 lg:w-6 dark:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> <a target="_blank" href="https://www.facebook.com/coders51" class="transition duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-coders51 lg:h-6 lg:w-6 dark:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a> </div> </footer>  </div> </div> </article> </main> <script>
+      document.addEventListener("astro:after-swap", () => {
+        if (
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        }
+      });
+
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+
+      const cl = document.documentElement.classList;
+      const themeAlreadyApplied = cl.contains("light") || cl.contains("dark");
+      if (!themeAlreadyApplied) {
+        cl.add(theme);
+      }
+      const meta = document.querySelector("meta[name=color-scheme]");
+      if (meta) {
+        if (theme === "dark") {
+          meta.content = "dark light";
+        } else if (theme === "light") {
+          meta.content = "light dark";
+        }
+      }
+    </script> </body> </html>
