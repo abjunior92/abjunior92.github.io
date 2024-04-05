@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime.K1e75nIr.js";import{r}from"./index.NEDEFKed.js";const c=()=>{const[e,s]=r.useState(0);return t.jsxs("div",{className:"not-prose flex items-center gap-4",children:[t.jsx("button",{className:"rounded bg-coders51 px-2 py-1 text-white",onClick:()=>s(e+1),children:"Increment"}),t.jsxs("p",{children:["Count: ",e]})]})};export{c as default};
