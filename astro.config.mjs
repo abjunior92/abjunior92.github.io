@@ -28,10 +28,6 @@ export default defineConfig({
   site: BASE_URL,
   integrations: [mdx(), sitemap(), tailwind(), react()],
   output: "static",
-  outDir: "./docs",
-  build: {
-    assets: "astro"
-  },
   server: {
     host: true
   }
