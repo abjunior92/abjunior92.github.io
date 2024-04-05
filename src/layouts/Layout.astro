@@ -54,7 +54,7 @@ const { title, description } = Astro.props;
       const cl = document.documentElement.classList;
       const themeAlreadyApplied = cl.contains("light") || cl.contains("dark");
       if (!themeAlreadyApplied) {
-        cl.add(theme);
+        cl.add(localStorage.theme);
       }
       const meta = document.querySelector("meta[name=color-scheme]");
       if (meta) {
