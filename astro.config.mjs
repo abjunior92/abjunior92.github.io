@@ -25,6 +25,7 @@ export default defineConfig({
     syntaxHighlight: false,
     rehypePlugins: [[rehypePrettyCode, options]]
   },
+  output: "static",
   site: BASE_URL,
   integrations: [mdx(), sitemap(), tailwind(), react()],
   server: {
