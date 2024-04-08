@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Author from "../components/Author.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -23,8 +22,6 @@ const posts = (await getCollection("blog")).sort(
             <p class="line-clamp-3">{post.data.description}</p>
             <div class="block text-sm">
               <FormattedDate date={post.data.pubDate} />
-              {" - "}
-              <Author author={post.data.author} />
             </div>
           </article>
         ))

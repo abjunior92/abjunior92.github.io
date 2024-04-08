@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "../../utils";
 
 export const BackIcon = ({ customClassName }: { customClassName?: string }) => {
   return (
@@ -6,7 +6,7 @@ export const BackIcon = ({ customClassName }: { customClassName?: string }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className={clsx("w-6 h-6", customClassName)}
+      className={cn("w-6 h-6", customClassName)}
     >
       <path
         fillRule="evenodd"

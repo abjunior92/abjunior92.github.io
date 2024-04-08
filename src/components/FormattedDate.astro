@@ -1,4 +1,6 @@
 ---
+import { CalendarIcon } from "./icons/CalendarIcon";
+
 interface Props {
   date: Date;
 }
@@ -6,15 +8,18 @@ interface Props {
 const { date } = Astro.props;
 ---
 
-<time
-  class="text-sm text-coders51 dark:text-coders51dark"
-  datetime={date.toISOString()}
->
-  {
-    date.toLocaleDateString("it-IT", {
-      year: "numeric",
-      month: "short",
-      day: "numeric"
-    })
-  }
-</time>
+<div class="flex items-center space-x-1">
+  <CalendarIcon customClassName="w-5 h-5" />
+  <time
+    class="text-sm text-coders51 dark:text-coders51dark"
+    datetime={date.toISOString()}
+  >
+    {
+      date.toLocaleDateString("it-IT", {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
+      })
+    }
+  </time>
+</div>
