@@ -3,6 +3,9 @@ title: 'ENDU: Frontend Project setup - how to start working on it'
 description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit suscipit illum excepturi repellat vel, itaque nostrum debitis inventore veritatis recusandae, animi distinctio at voluptates ratione consequuntur minus voluptate eum!"
 author: Andrea Junior Berselli
 pubDate: '03-25-2024 10:00'
+updatedDate: '04-05-2024 12:00'
+heroImage: 'blog-placeholder-about.jpg'
+timeRead: '3'
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -103,11 +106,13 @@ Under the `app` dir is specified a `[lang]` dir to handle the internationalizati
 Inside the `locales` folder there are two sub-folders: one for `en` and one for `it` containing the keys to provide text all around the entire app.
 
 How to use inside a React component:
-```jsx
+
+```jsx {3}
 const { t } =  useTranslation('common')
 ...
 <div>{t('somethingWentWrong')}</div>
 ```
+
 "common.json" is the file where is defined the key: `somethingWentWrong`
 To enable a specific translation file for an url, see the `i18n.js` file configuration. 
 
